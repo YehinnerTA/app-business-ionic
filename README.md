@@ -5,26 +5,32 @@
 <h1 align="center">📱 app-business-ionic</h1>
 
 <p align="center">
-  Aplicación móvil empresarial hecha con <strong>React</strong>, <strong>TypeScript</strong>, <strong>Ionic</strong> y <strong>Firebase</strong>.
+  Business mobile app built with:
+</p>
+
+<p align="center">
+  <a href="https://reactnative.dev/">
+    <img src="https://img.shields.io/badge/react_native-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" alt="React Native" />
+  </a>
+  <a href="https://www.typescriptlang.org/">
+    <img src="https://img.shields.io/badge/typescript-%233178C6.svg?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+  </a>
+  <a href="https://ionicframework.com/">
+    <img src="https://img.shields.io/badge/Ionic-%234E8EF7.svg?style=for-the-badge&logo=Ionic&logoColor=white" alt="Ionic" />
+  </a>
+  <a href="https://firebase.google.com/">
+    <img src="https://img.shields.io/badge/firebase-%23FFA000.svg?style=for-the-badge&logo=firebase" alt="Firebase" />
+  </a>
 </p>
 
 ---
 
-## 🚀 Tecnologías utilizadas
+## 🛠️ Main Features
 
-- ⚛️ **React** – Para construir componentes de interfaz.
-- 🟦 **TypeScript** – Tipado estático para mayor robustez.
-- 💙 **Ionic** – UI framework para apps móviles con experiencia nativa.
-- 🔥 **Firebase** – Autenticación, base de datos, almacenamiento y más.
-
----
-
-## 🛠️ Funcionalidades principales
-
-- ✅ Autenticación de usuarios con Firebase Auth.
-- ✅ Almacenamiento seguro de datos en Firestore.
-- ✅ Interfaz adaptable y responsive para Android/iOS.
-- ✅ Navegación intuitiva y carga rápida.
+- ✅ User authentication with Firebase Auth.
+- ✅ Secure data storage in Firestore.
+- ✅ Responsive and adaptable interface for Android/iOS.
+- ✅ Intuitive navigation and fast loading.
 
 ---
 
@@ -36,7 +42,6 @@
       <a href="mailto:ytorresastorga@gmail.com" target="_blank">
         <img src="https://img.shields.io/badge/gmail-%2300acee.svg?color=EA4335&style=for-the-badge&logo=gmail&logoColor=white" alt="gmail" style="margin-bottom: 5px;" />
       </a>
-      <br>
       <a href="https://wa.me/51910317266" target="_blank">
         <img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="whatsapp" style="margin-bottom: 5px;" />
       </a>
@@ -46,15 +51,18 @@
 
 ---
 
-## 📦 Instalación
+## 📦 Installation
 
 ```bash
-# Clonar el repositorio
+# Install Ionic CLI globally if you haven't done it yet
+npm install -g @ionic/cli
+
+# Clone the repository
 git clone https://github.com/YehinnerTA/app-business-ionic.git
 cd app-business-ionic
 
-# Instalar dependencias
+# Install dependencies
 npm install
 
-# Ejecutar localmente
+# To run the app locally, use:
 ionic serve
