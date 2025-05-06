@@ -16,9 +16,9 @@
 
 #container img {
   width: 424px;
-height: 424px;
-flex-shrink: 0;
-aspect-ratio: 1/1;
+  height: 424px;
+  flex-shrink: 0;
+  aspect-ratio: 1/1;
 }
 
 #container strong {
