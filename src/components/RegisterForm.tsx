@@ -4,18 +4,18 @@ import './RegisterForm.css'
 
 const RegisterForm: React.FC = () => {
     return (
-        <div id="container">
+        <div id="container" className="container-bg">
             {/* Imagen del Logo */}
-            <img src="/assets/logos/logo-company.svg" alt="Logo" className="logo-img" />
+            <img src="/assets/logos/logo-company.svg" alt="Logo" className="logo-img log-reg" />
 
             {/* Mensaje de Bienvenida */}
-            <strong>¡Crea tu cuenta ahora!</strong>
+            <strong>Diseñado para conquistarte</strong>
 
             {/* Formulario de Registro */}
             <form action="" className='auth-form'>
                 <div className='input-box'>
                     <input type="text" required placeholder='' />
-                    <label className='email-label'>Nombre completo</label>
+                    <label className='nam-ape-label'>Nombre completo</label>
                     <i className="fa-regular fa-user"></i>
                 </div>
 
@@ -33,7 +33,7 @@ const RegisterForm: React.FC = () => {
 
                 <div className='input-box'>
                     <input type="password" required placeholder='' />
-                    <label className='pass-label'>Confirmar contraseña</label>
+                    <label className='cpass-label'>Confirmar contraseña</label>
                     <i className="fa fa-lock"></i>
                 </div>
 
