@@ -136,3 +136,12 @@
     color: #000;
     font-weight: bold;
 }
+
+.error-message {
+    margin-top: 5px;
+    margin-bottom: -6px;
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+    transition: opacity 0.3s ease;
+}
