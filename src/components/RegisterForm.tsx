@@ -1,8 +1,16 @@
 import React from 'react';
+import { useHistory } from 'react-router';
 import './LoginForm.css';
 import './RegisterForm.css'
 
 const RegisterForm: React.FC = () => {
+    // Redireccionar -> Login
+    const history = useHistory();
+
+    const handleLogin = () => {
+        history.push('/login');
+    };
+
     return (
         <div id="container" className="container-bg">
             {/* Imagen del Logo */}
@@ -38,7 +46,7 @@ const RegisterForm: React.FC = () => {
                 </div>
 
                 <button className='btn' type='submit'>Registrarse</button>
-                <button className='btn' type='button'>Volver al Login</button>
+                <button className='btn' type='button' onClick={handleLogin}>Volver al Login</button>
             </form>
         </div>
     );

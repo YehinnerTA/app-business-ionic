@@ -2,7 +2,7 @@ import React from 'react';
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import SplashScreen from '../components/SplashScreen';
 
-const Home: React.FC = () => {
+const SplashPage: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
@@ -22,4 +22,4 @@ const Home: React.FC = () => {
   );
 };
 
-export default Home;
+export default SplashPage;
