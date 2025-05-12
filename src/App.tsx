@@ -2,7 +2,8 @@ import React from 'react';
 import { Redirect, Route } from 'react-router-dom';
 import { IonApp, IonRouterOutlet, setupIonicReact } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-
+import Inicio from './pages/Inicio';
+import ProductDetail from './pages/ProductDetail';
 // Conexión de archivos intermediario
 import SplashLoader from './pages/SplashLoader';
 
@@ -10,7 +11,7 @@ import SplashLoader from './pages/SplashLoader';
 import SplashPage from './pages/SplashPage';
 import Login from './pages/Login';
 import Register from './pages/Register';
-import Home from './pages/Home';
+
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -42,8 +43,8 @@ const App: React.FC = () => (
         <Route path="/SplashPage" component={SplashPage} />
         <Route path="/login" component={Login} />
         <Route path="/register" component={Register} />
-        <Route path="/home" component={Home} exact />
-
+        <Route path="/inicio" component={Inicio} exact />
+        <Route path="/productdetail" component={ProductDetail} />
         {/* Redirección */}
         <Redirect to="/" />
       </IonRouterOutlet>

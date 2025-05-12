@@ -31,7 +31,7 @@ const LoginForm: React.FC = () => {
             await signInWithEmailAndPassword(app_auth, email, password);
             setEmail('');
             setPassword('');
-            history.push('/home');
+            history.push('/inicio');
         } catch (err) {
             const error = err as FirebaseError;
 
