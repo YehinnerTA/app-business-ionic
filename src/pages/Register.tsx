@@ -16,6 +16,7 @@ const Register: React.FC = () => {
                         <IonTitle size="large">Register</IonTitle>
                     </IonToolbar>
                 </IonHeader>
+
                 <RegisterForm />
             </IonContent>
         </IonPage>
