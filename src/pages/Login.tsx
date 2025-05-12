@@ -1,21 +1,22 @@
 import React from 'react';
-import { IonContent, IonHeader, IonInput, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import LoginForm from '../components/LoginForm';
 
 const Login: React.FC = () => {
     return (
         <IonPage>
             <IonHeader>
                 <IonToolbar>
-                    <IonTitle>Blank</IonTitle>
+                    <IonTitle>Login</IonTitle>
                 </IonToolbar>
             </IonHeader>
-            <IonContent fullscreen>
+            <IonContent fullscreen className='login-content'>
                 <IonHeader collapse="condense">
                     <IonToolbar>
-                        <IonTitle size="large">Blank</IonTitle>
+                        <IonTitle size="large">Login</IonTitle>
                     </IonToolbar>
                 </IonHeader>
-                <IonInput>Hola</IonInput>
+                <LoginForm />
             </IonContent>
         </IonPage>
     );
