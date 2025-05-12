@@ -11,6 +11,8 @@ import SplashPage from './pages/SplashPage';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import Home from './pages/Home';
+import Inicio from './pages/Inicio';
+import ProductDetail from './pages/ProductDetail';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -43,6 +45,8 @@ const App: React.FC = () => (
         <Route path="/login" component={Login} />
         <Route path="/register" component={Register} />
         <Route path="/home" component={Home} exact />
+        <Route path="/inicio" component={Inicio} />
+        <Route path="/productdetail" component={ProductDetail} />
 
         {/* Redirección */}
         <Redirect to="/" />
