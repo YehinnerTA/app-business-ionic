@@ -1,5 +1,5 @@
 import { IonHeader, IonToolbar, IonTitle, IonButtons, IonButton, IonIcon } from '@ionic/react';
-import { personOutline, searchOutline } from 'ionicons/icons';
+import { personOutline } from 'ionicons/icons';
 import React from 'react';
 
 
