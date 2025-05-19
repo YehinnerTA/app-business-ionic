@@ -1,0 +1,129 @@
+.payment-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.title {
+    text-align: center;
+    color: #ff6600;
+    margin-bottom: 25px;
+    font-size: 22px;
+}
+
+.subtitle {
+    color: #ff8533;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.payment-methods {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.method-btn {
+    padding: 12px 20px;
+    background-color: #ffa94d;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.method-btn:hover {
+    background-color: #ff8000;
+}
+
+.payment-form {
+    width: 100%;
+    max-width: 300px;
+}
+
+.payment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.payment-form input {
+    padding: 12px;
+    border: 1px solid #ffcc99;
+    border-radius: 10px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.payment-form input:focus {
+    border-color: #ff8000;
+    box-shadow: 0 0 5px #ffa94d;
+}
+
+.card-details {
+    display: flex;
+    gap: 10px;
+}
+
+.MMAA {
+    width: 100px;
+}
+
+.submit-btn {
+    margin-top: 10px;
+    padding: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    color: white;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.tarjeta-btn {
+    background-color: #ff6600;
+}
+
+.tarjeta-btn:hover {
+    background-color: #cc5200;
+    transform: scale(1.03);
+}
+
+.yape-btn {
+    background-color: #ff944d;
+}
+
+.yape-btn:hover {
+    background-color: #e67300;
+    transform: scale(1.03);
+}
+
+.payment-section {
+    margin-bottom: 40px;
+}
+
+.method-btn.active {
+    background-color: #ff8000;
+    box-shadow: 0 4px 12px rgba(255, 128, 0, 0.6);
+}

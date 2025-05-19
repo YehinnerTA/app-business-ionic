@@ -74,11 +74,11 @@
 }
 
 .input-box .email-label {
-    top: 485px;
+    top: 430px;
 }
 
 .input-box .pass-label {
-    top: 580px;
+    top: 525px;
 }
 
 .input-box input:focus~label,
@@ -91,12 +91,12 @@
 
 .input-box input:focus~.email-label,
 .input-box input:not(:placeholder-shown)~.email-label {
-    top: 460px;
+    top: 400px;
 }
 
 .input-box input:focus~.pass-label,
 .input-box input:not(:placeholder-shown)~.pass-label {
-    top: 560px;
+    top: 500px;
 }
 
 .input-box i {

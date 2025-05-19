@@ -2,8 +2,6 @@ import React from 'react';
 import { Redirect, Route } from 'react-router-dom';
 import { IonApp, IonRouterOutlet, setupIonicReact } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import Inicio from './pages/Inicio';
-import ProductDetail from './pages/ProductDetail';
 // Conexión de archivos intermediario
 import SplashLoader from './pages/SplashLoader';
 
@@ -11,8 +9,14 @@ import SplashLoader from './pages/SplashLoader';
 import SplashPage from './pages/SplashPage';
 import Login from './pages/Login';
 import Register from './pages/Register';
+<<<<<<< HEAD
 import SearchPage from './pages/SearchPage';
 
+=======
+import Inicio from './pages/Inicio';
+import ProductDetail from './pages/ProductDetail';
+import PaymentPage from './pages/PaymentPage';
+>>>>>>> 1a28221c7e42d4f4bb8e99d2e2d2bc8dbafa9d0b
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -41,12 +45,18 @@ const App: React.FC = () => (
       <IonRouterOutlet>
         {/* Ubicación */}
         <Route exact path="/" component={SplashLoader} />
-        <Route path="/SplashPage" component={SplashPage} />
+        <Route path="/SplashPage" component={SplashPage} exact />
         <Route path="/login" component={Login} />
         <Route path="/register" component={Register} />
         <Route path="/inicio" component={Inicio} exact />
+<<<<<<< HEAD
         <Route path="/productdetail" component={ProductDetail}/>
         <Route path="/searchpage" component={SearchPage}/>
+=======
+        <Route path="/productdetail" component={ProductDetail} />
+        <Route path="/paymentpage" component={PaymentPage} />
+
+>>>>>>> 1a28221c7e42d4f4bb8e99d2e2d2bc8dbafa9d0b
         {/* Redirección */}
         <Redirect to="/" />
       </IonRouterOutlet>
