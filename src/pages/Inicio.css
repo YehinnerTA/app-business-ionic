@@ -1,9 +1,33 @@
-/* Contenedor principal */
+/* inicio.css */
+
+/* Ajuste de los márgenes en el contenedor */
 .container {
-  padding: 30px;
+  padding: 30px 10px;
   background-color: #f5f5f5;
   max-width: 1200px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+
+.image-principal{
+  padding: 2px;
+  position: relative;
+}
+
+.image-principal img{
+  border-radius: 10px;
+}
+
+.title-principal{
+  position: absolute;
+  top: 9%;
+  left: 20px;
+  font-weight: bolder;
+  font-size: 2.2rem;
 }
 
 /* Títulos de las secciones mejorados */
@@ -19,21 +43,18 @@
 
 /* Mejora del grid de productos */
 .product-grid {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 tarjetas por fila */
   gap: 20px;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
   padding-bottom: 30px;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding-left: 20px;
+  justify-items: center; /* Centra cada tarjeta dentro de la celda */
+  width: 100%; /* Hace que el grid ocupe todo el ancho disponible */
+  max-width: 1100px; /* Limita el ancho máximo */
+  margin: 0 auto; /* Asegura que el grid esté centrado */
 }
 
 /* Tarjetas de producto con bordes redondeados y sombra */
 .product-card {
-  flex: 0 0 auto;
-  width: 200px;
-  height: 320px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -44,14 +65,17 @@
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
+  width: 150px; 
+  height: 240px; /* altura de las tarjetas */
+  border-radius: 10px; /* Bordes redondeados */
 }
 
 /* Contenedor de la imagen del producto */
 .product-image-container {
   position: relative;
   width: 100%;
-  height: 65%;
-  background-color: transparent; /* Fondo gris claro */
+  height: 100%;
+  background-color: transparent;
   overflow: hidden;
 }
 
@@ -63,8 +87,8 @@
 
 /* Ajustes a la imagen de los productos */
 .product-image {
-  width: 200px;
-  height: 200px;
+  width: 160px;
+  height: 160px;
   object-fit: contain;
   margin-top: 20px;
   transition: transform 0.3s ease;
@@ -74,22 +98,22 @@
 .product-card:hover .product-image {
   transform: scale(1.1);
 }
+
 /* Estilo de los textos en las tarjetas */
 .product-title {
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #333;
+  font-size: 1rem;
+  font-weight:400;
+  color: #424242;
   margin-top: 10px;
   padding: 0 10px;
 }
 
 /* Estilo del precio del producto */
 .product-price {
-  font-size: 1.3rem;
-  font-weight: bold;
-  color: #e02a2a;
+  font-size: 1.1rem;
+  font-weight: bolder;
+  color: #000000;
   margin-bottom: 15px;
-  text-align: center;
 }
 
 /* Ajuste de scrollbar */
@@ -102,12 +126,10 @@
   border-radius: 10px;
 }
 
-
 /* Contenedor del título y el precio */
 .product-details {
-  padding: 10px 10px 3px ;
+  padding: 0px 9px 3px ;
   width: 100%;
-  background-color: #ccccccd7; /* Fondo blanco */
+  background-color: #ccccccd7;
   text-align: center;
 }
-

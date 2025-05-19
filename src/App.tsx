@@ -11,6 +11,7 @@ import SplashLoader from './pages/SplashLoader';
 import SplashPage from './pages/SplashPage';
 import Login from './pages/Login';
 import Register from './pages/Register';
+import SearchPage from './pages/SearchPage';
 
 
 /* Core CSS required for Ionic components to work properly */
@@ -44,7 +45,8 @@ const App: React.FC = () => (
         <Route path="/login" component={Login} />
         <Route path="/register" component={Register} />
         <Route path="/inicio" component={Inicio} exact />
-        <Route path="/productdetail" component={ProductDetail} />
+        <Route path="/productdetail" component={ProductDetail}/>
+        <Route path="/searchpage" component={SearchPage}/>
         {/* Redirección */}
         <Redirect to="/" />
       </IonRouterOutlet>

@@ -17,8 +17,9 @@ const ProductCard: React.FC<ProductCardProps> = ({ image, title, price, discount
       )}
     </div>
     <div className="product-details">
+         <p className="product-title">{title}</p>
             <p className="product-price">{price}</p>
-      <p className="product-title">{title}</p>
+   
 
     </div>
   </Link>
