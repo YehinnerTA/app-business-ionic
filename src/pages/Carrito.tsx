@@ -1,24 +1,22 @@
 import React from 'react';
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonIcon, IonFooter, IonGrid, IonRow, IonCol, IonImg, IonText, IonCard, IonCardContent } from '@ionic/react';
-import { homeOutline, searchOutline, heart, cartOutline, personOutline } from 'ionicons/icons';
-import './ListOfWishes.css';
-// import headerImage from '../assets/img/header.jpg';
-// import productImage from '../assets/img/imagen.png';
+import { homeOutline, searchOutline, heart, cartOutline, personOutline, chevronForwardOutline } from 'ionicons/icons';
+import './Carrito.css';
 
-const ListOfWishes: React.FC = () => {
+const Carrito: React.FC = () => {
   return (
     <IonPage>
       {/*CABECERA*/}
       <IonHeader translucent>
         <IonToolbar color="light">
-          <IonTitle>Lista de deseos</IonTitle>
+          <IonTitle>Carrito de compras</IonTitle>
           <IonIcon icon={personOutline} slot="end" className="ion-padding-end" />
         </IonToolbar>
       </IonHeader>
 
       {/*CUERPO*/}
       <IonContent fullscreen color="light" >
-        <div className="wishlist-header" style={{ backgroundImage: `url("../assets/img/header.jpg")` }}>
+        <div className="wishlist-header">
           <IonText className="wishlist-count">1 Artículo</IonText>
         </div>
 
@@ -27,7 +25,7 @@ const ListOfWishes: React.FC = () => {
           <IonGrid>
             <IonRow>
               <IonCol size="4">
-                <IonImg src={"../assets/img/imagen.png"} />
+                <IonImg src={"../assets/icon/1.svg"} />
               </IonCol>
               <IonCol size="8">
                 <IonCardContent>
@@ -49,6 +47,22 @@ const ListOfWishes: React.FC = () => {
         </IonCard>
       </IonContent>
 
+      {/*TOTAL*/}
+      <IonCard className="total-card">
+        <IonCardContent className="total-card-content" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+          <IonText className="total-text" style={{ fontSize: '14px', color: 'black' }}>Total</IonText>
+          <IonText className="total-subtext" style={{ fontSize: '14px', color: 'gray' }}> (Incluye el IVA)</IonText>
+          <IonText className="total-amount" style={{ fontSize: '14px', color: 'black' }}>S/. 1,000.00</IonText>
+        </IonCardContent>
+      </IonCard>
+      {/*PAGAR*/}
+      <IonCard className="pagar-card">
+        <IonCardContent className="pagar-card-content" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', color: 'white', padding: '12px 16px' }}>
+          <IonText className="pagar-text" style={{ fontSize: '14px', color: 'white' }}>Pagar</IonText>
+          <IonIcon icon={chevronForwardOutline} color="light" style={{ fontSize: '20px' }} />
+        </IonCardContent>
+      </IonCard>
+
       {/*MANÚ INFERIOR*/}
       <IonFooter>
         <IonToolbar>
@@ -66,4 +80,4 @@ const ListOfWishes: React.FC = () => {
   );
 };
 
-export default ListOfWishes;
+export default Carrito;

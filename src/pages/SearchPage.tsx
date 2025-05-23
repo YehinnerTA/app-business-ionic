@@ -2,7 +2,7 @@ import React from "react";
 import { IonPage, IonContent, IonSearchbar } from "@ionic/react";
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import { IonIcon } from '@ionic/react';
+// import { IonIcon } from '@ionic/react';
 import "./SearchPage.css";
 
 const SearchPage: React.FC = () => {

@@ -55,7 +55,6 @@
   position: absolute;
   left: 0;
   right: 0;
-  transform: translateY(-7%);
   z-index: 1000;
 }
 

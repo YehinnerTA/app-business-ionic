@@ -1,4 +1,4 @@
-import { IonContent, IonPage, IonSearchbar, IonButton } from '@ionic/react';
+import { IonContent, IonPage, IonSearchbar } from '@ionic/react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import ProductCard from '../components/ProductCard';

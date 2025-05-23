@@ -13,6 +13,10 @@ import SearchPage from './pages/SearchPage';
 import Inicio from './pages/Inicio';
 import ProductDetail from './pages/ProductDetail';
 import PaymentPage from './pages/PaymentPage';
+import Tienda from './pages/Tienda';
+import Productos from './pages/Productos';
+import ListOfWishes from './pages/ListOfWishes';
+import Carrito from './pages/Carrito';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -41,14 +45,19 @@ const App: React.FC = () => (
       <IonRouterOutlet>
         {/* Ubicación */}
         <Route exact path="/" component={SplashLoader} />
+
+        {/* Todas Direcciones */}
         <Route path="/SplashPage" component={SplashPage} exact />
         <Route path="/login" component={Login} />
         <Route path="/register" component={Register} />
         <Route path="/inicio" component={Inicio} exact />
-        <Route path="/productdetail" component={ProductDetail} />
         <Route path="/searchpage" component={SearchPage} />
         <Route path="/productdetail" component={ProductDetail} />
         <Route path="/paymentpage" component={PaymentPage} />
+        <Route path="/tienda" component={Tienda} />
+        <Route path="/productos" component={Productos} />
+        <Route path="/carrito" component={Carrito} />
+        <Route path="/listOfWishes" component={ListOfWishes} />
 
         {/* Redirección */}
         <Redirect to="/" />
