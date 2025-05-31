@@ -4,6 +4,10 @@ import { IonApp, IonRouterOutlet, setupIonicReact } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import Inicio from './pages/Inicio';
 import ProductDetail from './pages/ProductDetail';
+import Vendedor from './pages/Vendedor';
+import Store from './pages/Store';
+import Pedidos from './pages/Pedidos';
+import Agregacion from './pages/Agregacion';
 // Conexión de archivos intermediario
 import SplashLoader from './pages/SplashLoader';
 
@@ -42,9 +46,13 @@ const App: React.FC = () => (
         <Route exact path="/" component={SplashLoader} />
         <Route path="/SplashPage" component={SplashPage} />
         <Route path="/login" component={Login} />
+        <Route path="/store" component={Store} />
+        <Route path="/Agregacion" component={Agregacion} />
+        <Route path="/vendedor" component={Vendedor} />
+        <Route path="/Pedidos" component={Pedidos} />
         <Route path="/register" component={Register} />
         <Route path="/inicio" component={Inicio} exact />
-        <Route path="/productdetail" component={ProductDetail} />
+        <Route path="/productdetail" component={ProductDetail}/>
         {/* Redirección */}
         <Redirect to="/" />
       </IonRouterOutlet>

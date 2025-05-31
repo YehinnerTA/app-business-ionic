@@ -1,0 +1,150 @@
+.agregacion-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: #fff;
+}
+
+.agregacion-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+}
+
+.agregacion-banner {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  min-height: 100px;
+  background-image: url('https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=800&q=80');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.agregacion-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 18px 0 18px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  background: transparent;
+  position: relative;
+  z-index: 3;
+  color: black;
+}
+
+.agregacion-titulo {
+  font-family: 'Montserrat', sans-serif;
+  color: #000000;
+}
+
+.agregacion-user-icon img {
+  width: 28px;
+  height: 28px;
+}
+
+.agregacion-form {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+  gap: 18px;
+}
+
+.agregacion-imagen-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.agregacion-imagen-preview {
+  width: 120px;
+  height: 120px;
+  background: #fff;
+  border-radius: 16px;
+  border: 2px dashed #bbb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+  overflow: hidden;
+}
+
+.agregacion-imagen {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.agregacion-imagen-icono {
+  width: 70px;
+  height: 70px;
+  opacity: 0.7;
+}
+
+.agregacion-btn-subir {
+  background: #fff;
+  border: 1px solid #222;
+  border-radius: 8px;
+  padding: 6px 18px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.agregacion-label {
+  width: 90%;
+  max-width: 340px;
+  font-size: 1.05rem;
+  margin-bottom: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #000000;
+}
+
+.agregacion-input {
+  width: 100%;
+  border: 1px solid #222;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 1rem;
+  margin-top: 4px;
+  resize: none;
+  background: #fff;
+}
+
+.agregacion-btn-agregar {
+  background: #fff;
+  border: 1px solid #222;
+  border-radius: 8px;
+  padding: 10px 32px;
+  font-size: 1.1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  color: black;
+}
+
+footer, .footer {
+  width: 100%;
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  background: #fff;
+  border-top: 1px solid #e5e7eb;
+}
