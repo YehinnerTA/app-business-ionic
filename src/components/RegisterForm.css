@@ -4,7 +4,7 @@
 
 #container .log-reg {
     width: 70vw;
-    margin-top: -80px;
+    margin-top: -50px;
     margin-bottom: 10px;
 }
 
@@ -19,40 +19,40 @@
 }
 
 .input-box .nam-ape-label {
-    top: 338px;
+    top: 315px;
 }
 
 .container-bg .input-box .email-label {
-    top: 424px;
+    top: 400px;
 }
 
 .container-bg .input-box .pass-label {
-    top: 508px;
+    top: 485px;
 }
 
 .input-box .cpass-label {
-    top: 595px;
+    top: 570px;
     font-size: 21px;
 }
 
 .input-box input:focus~.nam-ape-label,
 .input-box input:not(:placeholder-shown)~.nam-ape-label {
-    top: 314px;
+    top: 290px;
 }
 
 .container-bg .input-box input:focus~.email-label,
 .container-bg .input-box input:not(:placeholder-shown)~.email-label {
-    top: 389px;
+    top: 370px;
 }
 
 .container-bg .input-box input:focus~.pass-label,
 .container-bg .input-box input:not(:placeholder-shown)~.pass-label {
-    top: 478px;
+    top: 455px;
 }
 
 .input-box input:focus~.cpass-label,
 .input-box input:not(:placeholder-shown)~.cpass-label {
-    top: 560px;
+    top: 540px;
 }
 
 .error-message {

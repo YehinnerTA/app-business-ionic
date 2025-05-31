@@ -2,12 +2,6 @@ import React from 'react';
 import { Redirect, Route } from 'react-router-dom';
 import { IonApp, IonRouterOutlet, setupIonicReact } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import Inicio from './pages/Inicio';
-import ProductDetail from './pages/ProductDetail';
-import Vendedor from './pages/Vendedor';
-import Store from './pages/Store';
-import Pedidos from './pages/Pedidos';
-import Agregacion from './pages/Agregacion';
 // Conexión de archivos intermediario
 import SplashLoader from './pages/SplashLoader';
 
@@ -15,8 +9,18 @@ import SplashLoader from './pages/SplashLoader';
 import SplashPage from './pages/SplashPage';
 import Login from './pages/Login';
 import Register from './pages/Register';
-
-
+import SearchPage from './pages/SearchPage';
+import Inicio from './pages/Inicio';
+import ProductDetail from './pages/ProductDetail';
+import PaymentPage from './pages/PaymentPage';
+import Tienda from './pages/Tienda';
+import Productos from './pages/Productos';
+import ListOfWishes from './pages/ListOfWishes';
+import Carrito from './pages/Carrito';
+import Store from './pages/Store';
+import Agregacion from './pages/Agregacion';
+import Vendedor from './pages/Vendedor';
+import Pedidos from './pages/Pedidos';
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
 
@@ -44,7 +48,9 @@ const App: React.FC = () => (
       <IonRouterOutlet>
         {/* Ubicación */}
         <Route exact path="/" component={SplashLoader} />
-        <Route path="/SplashPage" component={SplashPage} />
+
+        {/* Todas Direcciones */}
+        <Route path="/SplashPage" component={SplashPage} exact />
         <Route path="/login" component={Login} />
         <Route path="/store" component={Store} />
         <Route path="/Agregacion" component={Agregacion} />
@@ -53,6 +59,14 @@ const App: React.FC = () => (
         <Route path="/register" component={Register} />
         <Route path="/inicio" component={Inicio} exact />
         <Route path="/productdetail" component={ProductDetail}/>
+        <Route path="/searchpage" component={SearchPage} />
+        <Route path="/productdetail" component={ProductDetail} />
+        <Route path="/paymentpage" component={PaymentPage} />
+        <Route path="/tienda" component={Tienda} />
+        <Route path="/productos" component={Productos} />
+        <Route path="/carrito" component={Carrito} />
+        <Route path="/listOfWishes" component={ListOfWishes} />
+
         {/* Redirección */}
         <Redirect to="/" />
       </IonRouterOutlet>

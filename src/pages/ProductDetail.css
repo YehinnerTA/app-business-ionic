@@ -1,115 +1,117 @@
-/* Contenedor principal para la vista de detalles */
-.product-detail-container {
+/* Evitar que interfiera con el diseño de Inicio */
+.product-detail-content {
+  background-color: #f5f5f5;
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 20px;
-  background-color: #f5f5f5;
+  align-items: flex-start;
+  height: 100vh; /* Asegura que ocupe toda la altura de la pantalla */
+  padding: 0;
+  overflow-y: auto; /* Permite hacer scroll si el contenido es largo */
 }
 
-/* Contenedor del detalle del producto */
-.product-detail {
+/* Contenedor principal del detalle del producto */
+.product-detail-container {
   display: flex;
-  background-color: #fff;
-  border-radius: 15px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-  width: 80%;
-  max-width: 1200px;
-  padding: 20px;
-}
-
-/* Imagen del producto en la página de detalles */
-.product-image {
-  width: 50%;
-  padding-right: 20px;
-}
-
-.product-detail-image {
+  flex-direction: column;
   width: 100%;
-  object-fit: contain;
-  border-radius: 10px;
+  max-width: 800px; /* Limita el ancho del contenedor */
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 
-/* Información del producto (título, precio, descripción, etc.) */
+/* Sección de la imagen en detalle del producto */
+.product-detail-container .product-image {
+  width: 100%;
+  height: 50vh; /* La imagen ocupará la mitad de la pantalla */
+  background-color: #eee;
+  display: flex;
+  justify-content: center; /* Centra la imagen horizontalmente */
+  align-items: center; /* Centra la imagen verticalmente */
+  padding: 70px;
+  margin: 0;
+}
+
+.product-detail-container .product-image img {
+  width: 100%;
+  height: auto; /* Asegura que la imagen sea proporcional */
+  object-fit: contain; /* La imagen no se recorta y se ajusta proporcionalmente */
+
+}
+
+/* Sección de la información del producto */
 .product-info {
-  width: 50%;
+  background-color: #ffffff;
+  padding: 20px;
+  overflow-y: auto; /* Permite hacer scroll si el contenido es largo */
 }
 
-.product-title {
-  font-size: 2rem;
+/* Información del producto */
+.product-info .product-title {
+  font-size: 1.6rem;
   font-weight: bold;
-  color: #333;
+  color: #424242;
   margin-bottom: 10px;
+  text-align: left; /* Centra el título */
 }
 
-.product-brand {
-  font-size: 1.1rem;
+.product-info .product-brand {
+  font-size: 1rem;
   color: #777;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  text-align: left; /* Centra la marca */
 }
 
-.product-price {
+.product-info .product-price {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #e91e63;
+  color: #000000;
   margin-bottom: 20px;
+  text-align: left; /* Centra el precio */
 }
 
-.product-description {
-  font-size: 1rem;
-  color: #555;
-  margin-bottom: 20px;
-}
-
-.product-colors {
+/* Opciones de color */
+.color-options {
   display: flex;
-  gap: 10px;
+  justify-content: left; /* Centra las opciones de color */
+  align-items: center;
   margin-bottom: 20px;
 }
 
-.color-circle {
+.color-options span {
+  font-size: 1.1rem;
+  margin-right: 10px;
+  color: #000000;
+}
+
+.color-option {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  border: 2px solid #fff;
+  margin: 0 5px;
+  border: 2px solid #ccc;
   cursor: pointer;
-  transition: transform 0.2s;
+  transition: transform 0.3s;
 }
 
-.color-circle:hover {
+.color-option.selected {
   transform: scale(1.1);
+  border-color: #ccb8b8;
 }
 
-.product-actions {
-  display: flex;
-  gap: 15px;
+/* Botones de acción */
+.action-buttons {
+  width: 100%;
+  margin-top: 20px;
 }
 
-.btn {
-  padding: 12px 25px;
-  font-size: 1rem;
-  font-weight: bold;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
+.add-to-cart-btn {
+  margin-bottom: 10px;
 }
 
-.add-to-cart {
-  background-color: #4caf50;
-  color: white;
-  border: none;
+.add-to-favorites-btn {
+  background-color: #eee;
+  color: #ffffff;
 }
 
-.add-to-cart:hover {
-  background-color: #45a049;
-}
 
-.add-to-favorites {
-  background-color: #f44336;
-  color: white;
-  border: none;
-}
-
-.add-to-favorites:hover {
-  background-color: #e53935;
-}
